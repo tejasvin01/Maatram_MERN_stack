@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+/* Header Section */
+.logo,
+.text {
+    display: inline-block;
+}
+
+.logo span:last-child {
+    font-size: 8px;
+    margin-top: 0;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 50px;
+}
+
+.text p {
+    display: inline-block;
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+.text p span {
+    color: skyblue;
+}
+
+.text {
+    position: absolute;
+    right: 20%;
+    top: 30px;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.navbar div a {
+    text-decoration: none;
+    color: #333;
+    font-size: 12px;
+    padding-left: 20px;
+}
+
+.navbar div,
+p {
+    display: inline-block;
+}
+
+.navbar p {
+    position: absolute;
+    right: 20%;
+    color: skyblue;
+    margin-top: 3px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), 
+                url(https://media.istockphoto.com/id/1413761479/photo/mature-couple-meeting-financial-advisor-for-investment.jpg?s=612x612&w=0&k=20&c=kKraGQ3d_90VsQVIwAx6mi3gNsiytiLT9jlEbmEh1lE=);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.hero div {
+    position: relative;
+    top: 20%;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero h2 {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero div p {
+    font-size: 15px;
+    margin-bottom: 3rem;
+}
+
+.hero span {
+    font-size: 15px;
+    background-color: rgb(231, 177, 52);
+    padding: 15px 25px;
+}
+
+/* Cards Section */
+.cards {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    /* justify-content: center;
+    align-items: stretch; Ensures all boxes stretch to the same height */
+    /* Adds spacing between boxes */
+    /* padding: 2rem 0; */
+}
+
+.cards .box {
+    flex: 1; /* Ensures boxes take equal width */
+    max-width: 300px; /* Sets a max width for smaller screens */
+    height: 200px; /* Sets a consistent height for all boxes */
+    padding: 1rem;
+    text-align: justify;
+    border-radius: 5px;
+    color: whitesmoke;
+}
+
+.box1 {
+    background-color: rgb(242, 75, 75);
+}
+
+.box2 {
+    background-color: skyblue;
+}
+
+.box3 {
+    background-color: lightgreen;
+}
+
+
+.box h2 {
+    margin-bottom: 10px;
+}
+
+.box p {
+    margin-bottom: 15px;
+    font-size: small;
+}
+
+.box span {
+    font: small;
+}
+
+/* Footer Section */
+.header,
+.navbar,
+.cards,
+.footer {
+    margin: 0 20%;
+}
+
+.footer {
+    position: relative;
+    top: 100px;
+    width: 80vw;
+}
+
+.about {
+    padding-left: 20px;
+    text-align: justify;
+    width: 20vw;
+    display: inline-block;
+}
+
+.content {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.art1,
+.art2,
+.about {
+    width: 20vw;
+    display: inline-block;
+    position: relative;
+    left: 30px;
+    bottom: 25px;
+}
+
+.about h2 {
+    margin-bottom: 10px;
+}
+
+.content span {
+    font-size: 2rem;
+}
+
+.content h4 {
+    margin-bottom: 10px;
+}
+
+.about,
+.art1,
+.art2 {
+    padding: 0 3em;
+}

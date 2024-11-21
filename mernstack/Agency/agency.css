@@ -1,0 +1,46 @@
+body{
+    background : linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5jgiiLFqoAuPcovZVkvC6X4Mfu31piD4d-6ddsSJpx9p-1xMhRJ0OstE&s);
+    
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: rgb(255, 255, 255);
+}
+
+
+header{
+    color: rgb(255, 255, 255);
+    margin-top: 5%;
+}
+span{
+    color:lightblue ;
+}
+header a{
+    position: relative;
+    left: 60%;
+    padding-left: 50px;
+    text-decoration: none;
+    color: white;
+}
+main{
+    position: relative;
+    top: 20%;
+    text-align: center;
+}
+main h1{
+    word-spacing: normal;
+    font-size: 4rem;
+}
+.reg{
+    position: relative;
+    left: 40%;
+    border: 2px solid;
+    width: 14rem;
+    height: 3rem;
+    border-color: lightblue;
+    box-shadow: 1rem;
+}
+.reg:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+
+

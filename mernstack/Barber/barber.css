@@ -1,0 +1,72 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to bottom, rgba(14, 164, 134, 0.2) 0%, rgba(14, 164, 134, 0.4) 25%, rgba(14, 164, 134, 0.6) 50%, rgba(14, 164, 134, 0.8) 75%, rgba(14, 164, 134, 1) 100%), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStor9vEAXB_4QZjTmJnggJ1H85KlvuX2ZsQw&s) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+.nav{
+    margin-left: 70px;
+    position: relative;
+    top:30px;
+}
+.nav h1{
+    display: inline-block;
+    position: relative;
+    top: -10px;
+    font-family: cursive;
+    color:whitesmoke;
+}
+.img1{
+    float:right;
+    position: relative;
+    left: -35px;
+}
+.heading{
+    position: relative;
+    text-align: center;
+    font-family:Brush Script MT;
+    font-size: 80px;
+    color: whitesmoke;
+    top:125px;
+}
+.content{
+    position: relative;
+    text-align: center;
+    font-family:cursive;
+    font-size: 25px;
+    color: whitesmoke;
+    top:125px;
+}
+.button1{
+    display:inline-block;
+    position:absolute;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 25px;
+    color: black;
+    margin-left: 40%;
+    top:450px;
+    background-color: white;
+    width:150px;
+    height: 42px;
+}
+.button1:hover{
+    background-color: white;
+}
+.button2{
+    position: absolute;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 25px;
+    color: white;
+    margin-left: 51%;
+    width:150px;
+    height:40px;
+    top:450px;
+    border: 2px solid white;
+}
