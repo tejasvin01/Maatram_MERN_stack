@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tejasvin Portfolio Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS Animation CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f6f6b9;
+      color: #09000c;
+      overflow-x: hidden;
+    }
+    .cto:hover{
+      color: #dd5bfd;
+    }
+    .touch:hover {
+      background-color: #892cfa;
+      color: #ffffffff;
+    }
+    .card {
+      border: none;
+      transition: transform 0.3s;
+  }
+  .card:hover {
+      transform: scale(1.05);
+  }
+  h1{
+    color: #dd5bfd;
+  }
+  i{
+    font-size: large;
+  }
+  .tracking-in-expand-fwd-top {
+    -webkit-animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  }
+  .box-shadow-own{
+    box-shadow: 40px 39px 27px -17px rgba(0,0,0,0.59);
+-webkit-box-shadow: 40px 39px 27px -17px rgba(0,0,0,0.59);
+-moz-box-shadow: 40px 39px 27px -17px rgba(0,0,0,0.59);
+  }
+  @-webkit-keyframes tracking-in-expand-fwd-top {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px) translateY(-500px);
+              transform: translateZ(-700px) translateY(-500px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand-fwd-top {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px) translateY(-500px);
+              transform: translateZ(-700px) translateY(-500px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+  .tracking-in-contract {
+    -webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  }
+  @-webkit-keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+  
+    
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+      <a class="navbar-brand cto" href="#hero">TEJASVIN R</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="text-center py-5" id="hero" data-aos="fade-up" >
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-12">
+        <h1 class="text-dark mt-5">Hi, I'm </h1>
+        <h1 class="fw-bold tracking-in-expand-fwd-top" >TEJASVIN R</h1>
+        <h3 class="lead tracking-in-expand-fwd-top text-primary">MERN-Stack Developer</h3>
+        <p >I create beautiful and functional websites</p>
+        <a href="#contact" class="btn btn-primary touch">Get in Touch</a>
+        <a href="./Tejafinalcv.pdf" target="_blank" class="btn btn-outline-primary touch">Hire Me</a>
+      </div>  
+      <div class="col-lg-4 col-12 mt-5">
+        <img class=" img-fluid box-shadow-own" style="border-radius: 50%; height: 70% ; width: 70%;" src="./myphoto1.jpg" alt="noimg">
+      </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5" data-aos="fade-right">
+  <div class="container">
+    <h1 class="text-center tracking-in-contract pb-4">
+      About Me
+    </h1>
+    <div class="row align-items-center">
+      <!-- Text Section -->
+      <div class="col-lg-8 col-md-7 mb-4 mb-md-0">
+        <p class="fs-5">
+          I’m a passionate MERN stack developer specializing in building scalable, responsive, and user-friendly web applications. With expertise in MongoDB, Express.js, React.js, and Node.js, I enjoy creating end-to-end solutions that solve real-world problems.
+          <br><br>
+          I have experience designing and developing full-stack applications, implementing RESTful APIs, and deploying projects in cloud environments. I’m equally comfortable working independently to meet project deadlines.
+        </p>
+      </div>
+      <!-- Image Section -->
+      <div class="col-lg-4 col-md-5 text-center">
+        <img 
+          src="./aboutme.jpg" 
+          class="img-fluid rounded-5 box-shadow-own" 
+          alt="Portfolio Image" 
+          style="max-width: 100%; height: auto;"
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Project Section -->
+<section class="py-5 " id="projects" >
+  <div class="container">
+      <h1 class="text-center mb-5" data-aos="fade-up">My Projects</h1>
+      <!-- Horizontal Scroll Row -->
+      <div class="row g-4 d-flex overflow-auto flex-nowrap " style="overflow-x: auto; white-space: nowrap;">
+          <!-- Project Cards -->
+          <div class="col-12 col-md-6 col-lg-4" style="display: inline-block; width: 300px;" data-aos="zoom-in">
+            <a href="http://127.0.0.1:5500/mernstack/Footer/footerpg.html" style="text-decoration: none; color: inherit;">
+              <div class="card mb-3">
+                <img src="./img/footerpglg.png" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                  <h5 class="card-title">Footer Page</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          <div class="col-12 col-md-6 col-lg-4" style="display: inline-block; width: 300px;" data-aos="zoom-in">
+            <a href="http://127.0.0.1:5500/mernstack/Agency/agency.html" style="text-decoration: none; color: inherit;">
+              <div class="card mb-3">
+                <img src="./img/agency.png" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                  <h5 class="card-title">Agency Page</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          <div class="col-12 col-md-6 col-lg-4" style="display: inline-block; width: 300px;" data-aos="zoom-in">
+            <a href="http://127.0.0.1:5500/mernstack/Barber/barber.html" style="text-decoration: none; color: inherit;">
+              <div class="card mb-3">
+                <img src="./img/barber.png" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                  <h5 class="card-title">Barber Shop Page</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          <div class="col-12 col-md-6 col-lg-4" style="display: inline-block; width: 300px;" data-aos="zoom-in">
+            <a href="http://127.0.0.1:5500/mernstack/ChatBox/chatbs.html" style="text-decoration: none; color: inherit;">
+              <div class="card mb-3">
+                <img src="./img/chatbs.png" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                  <h5 class="card-title">Chat Page</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          <div class="col-12 col-md-6 col-lg-4" style="display: inline-block; width: 300px;" data-aos="zoom-in">
+            <a href="http://127.0.0.1:5500/mernstack/Covid/covid.html" style="text-decoration: none; color: inherit;">
+              <div class="card mb-3">
+                <img src="./img/covid.png" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                  <h5 class="card-title">Covid Page</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4" style="display: inline-block; width: 300px;" data-aos="zoom-in">
+            <a href="http://127.0.0.1:5500/mernstack/Cricket/cricket.html" style="text-decoration: none; color: inherit;">
+              <div class="card mb-3">
+                <img src="./img/cricket.png" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                  <h5 class="card-title">Cricket Page</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4" style="display: inline-block; width: 300px;" data-aos="zoom-in">
+            <a href="http://127.0.0.1:5500/mernstack/Carousel/home.html" style="text-decoration: none; color: inherit;">
+              <div class="card mb-3">
+                <img src="./img/home.png" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                  <h5 class="card-title">Home Page</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4" style="display: inline-block; width: 300px;" data-aos="zoom-in">
+            <a href="http://127.0.0.1:5500/mernstack/NGO/ngo.html" style="text-decoration: none; color: inherit;">
+              <div class="card mb-3">
+                <img src="./img/ngo.png" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                  <h5 class="card-title">NGO Page</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4" style="display: inline-block; width: 300px;" data-aos="zoom-in">
+            <a href="http://127.0.0.1:5500/mernstack/Optics/optic.html" style="text-decoration: none; color: inherit;">
+              <div class="card mb-3">
+                <img src="./img/opticlg.png" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                  <h5 class="card-title">Optics Page</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4" style="display: inline-block; width: 300px;" data-aos="zoom-in">
+            <a href="http://127.0.0.1:5500/mernstack/Primaryschool/primaryschool.html" style="text-decoration: none; color: inherit;">
+              <div class="card mb-3">
+                <img src="./img/primaryschool.png" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                  <h5 class="card-title">Primary School Page</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4" style="display: inline-block; width: 300px;" data-aos="zoom-in">
+            <a href="http://127.0.0.1:5500/mernstack/Studentregform/regform.html" style="text-decoration: none; color: inherit;">
+              <div class="card mb-3">
+                <img src="./img/regform.png" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                  <h5 class="card-title">Student Regform Page</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4" style="display: inline-block; width: 300px;" data-aos="zoom-in">
+            <a href="http://127.0.0.1:5500/mernstack/Services/services.html" style="text-decoration: none; color: inherit;">
+              <div class="card mb-3">
+                <img src="./img/servicelg.png" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                  <h5 class="card-title">Service Page</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4" style="display: inline-block; width: 300px;" data-aos="zoom-in">
+            <a href="http://127.0.0.1:5500/mernstack/Ecommerce/specialoffer.html" style="text-decoration: none; color: inherit;">
+              <div class="card mb-3">
+                <img src="./img/speciallg.png" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                  <h5 class="card-title">Special offer Page</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4" style="display: inline-block; width: 300px;" data-aos="zoom-in">
+            <a href="http://127.0.0.1:5500/mernstack/FavouritePlaces/taj.html" style="text-decoration: none; color: inherit;">
+              <div class="card mb-3">
+                <img src="./img/taj.png" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                  <h5 class="card-title">Favourite Place Page</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4" style="display: inline-block; width: 300px;" data-aos="zoom-in">
+            <a href="http://127.0.0.1:5500/mernstack/TrendingBlogs/trending.html" style="text-decoration: none; color: inherit;">
+              <div class="card mb-3">
+                <img src="./img/trendlg.png" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                  <h5 class="card-title">Trending Blog Page</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4" style="display: inline-block; width: 300px;" data-aos="zoom-in">
+            <a href="http://127.0.0.1:5500/mernstack/Investing/marketing.html" style="text-decoration: none; color: inherit;">
+              <div class="card mb-3">
+                <img src="./img/marketing.png" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                  <h5 class="card-title">Investing Page</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+
+      </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section class="skills section py-5 text-center" id="skills">
+  <div class="container">
+    <h1 class="section-title mb-4" data-aos="fade-down">Skills</h1>
+
+    <div class="row">
+      <div class="col-lg-12 mx-auto">
+        <h2 class="skills_subtitle mb-3 text-primary" data-aos="fade-down" data-aos-delay="250">
+          Professional Skills
+        </h2>
+        <p class="skills_text mb-5" data-aos="fade-down" data-aos-delay="350">
+          Without sharpening your weapon, standing on the battlefield would not increase your chances of winning.
+        </p>
+
+        <!-- Skill: Python -->
+        <div class="skills_data mb-4" data-aos="fade-right">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span class="skills_name d-flex align-items-center">
+              <i class="bx bxl-python skill_icon me-2"></i> Python
+            </span>
+            <span>95%</span>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Python Skill" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-primary" style="width: 95%;"></div>
+          </div>
+        </div>
+
+        <!-- Skill: HTML5 -->
+        <div class="skills_data mb-4" data-aos="fade-right">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span class="skills_name d-flex align-items-center">
+              <i class="bx bxl-html5 skill_icon me-2"></i> HTML5
+            </span>
+            <span>85%</span>
+          </div>
+          <div class="progress" role="progressbar" aria-label="HTML5 Skill" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-warning" style="width: 85%;"></div>
+          </div>
+        </div>
+
+        <!-- Skill: CSS -->
+        <div class="skills_data mb-4" data-aos="fade-right">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span class="skills_name d-flex align-items-center">
+              <i class="bx bxl-css3 skill_icon me-2"></i> CSS
+            </span>
+            <span>80%</span>
+          </div>
+          <div class="progress" role="progressbar" aria-label="CSS Skill" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-info" style="width: 80%;"></div>
+          </div>
+        </div>
+
+        <!-- Skill: JavaScript -->
+        <div class="skills_data mb-4" data-aos="fade-right">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span class="skills_name d-flex align-items-center">
+              <i class="bx bxl-javascript skill_icon me-2"></i> JavaScript
+            </span>
+            <span>80%</span>
+          </div>
+          <div class="progress" role="progressbar" aria-label="JavaScript Skill" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-warning" style="width: 80%;"></div>
+          </div>
+        </div>
+
+        <!-- Skill: MySQL -->
+        <div class="skills_data mb-4" data-aos="fade-right">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span class="skills_name d-flex align-items-center">
+              <i class="bx bxs-data skill_icon me-2"></i> MySQL
+            </span>
+            <span>75%</span>
+          </div>
+          <div class="progress" role="progressbar" aria-label="MySQL Skill" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-secondary" style="width: 75%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- reviwe Section -->
+<section id="testimonials" class="py-5" data-aos="fade-left">
+  <div class="container mt-5">
+    <h1 class="text-center mb-5 text-primary">What Clients Say</h1>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-4 text-light box-shadow-own" style="background-color: #6a429b;">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-3">
+                        
+                        <div class="ms-3">
+                            <h5 class="card-title">Sanjay T</h5>
+                            <p class="card-subtitle mb-2 text-muted">Rating 4.5</p>
+                        </div>
+                    </div>
+                    <p class="card-text">Tejasvin R took the time to understand my goals and brought my vision to life, offering helpful suggestions along the way that improved the final product. Their technical knowledge was impressive, and they handled all challenges with professionalism and efficiency.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card mb-4 text-light box-shadow-own" style="background-color: #6a429b;">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-3">
+                       <div class="ms-3">
+                            <h5 class="card-title">Sedumadavan A</h5>
+                            <p class="card-subtitle mb-2 text-muted">Rating 4.7</p>
+                        </div>
+                    </div>
+                    <p class="card-text">I had the pleasure of working with Tejasvin R, and I couldn't be more pleased with the results. From the start, he demonstrated exceptional skill, creativity, . The website was not only visually appealing but also highly functional, offering a seamless user experience across devices.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+</div>
+</section>
+
+
+<!-- Contact Form -->
+<section id="contact" class=" bg-dark p-5" style="--bs-bg-opacity: .2;"data-aos="fade-up" >
+  <div class="container m-5">
+    <h2 class="text-center mb-4 tracking-in-contract">Contact Me</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <!-- Horizontal Alignment -->
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <!-- SMS -->
+          <a href="sms:+916379670336" class="btn btn-outline-dark d-flex align-items-center">
+            <i class="fas fa-sms me-2"></i> SMS
+          </a>
+          <!-- Call -->
+          <a href="tel:+916379670336" class="btn btn-outline-primary d-flex align-items-center">
+            <i class="fas fa-phone-alt me-2"></i> Call
+          </a>
+          <!-- WhatsApp -->
+          <a href="https://wa.me/6379670336" class="btn btn-outline-success d-flex align-items-center" target="_blank">
+            <i class="fab fa-whatsapp me-2"></i> WhatsApp
+          </a>
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/tejasvin_r" class="btn btn-outline-info d-flex align-items-center" target="_blank">
+            <i class="fab fa-instagram me-2"></i> Instagram
+          </a>
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/tejasvin-r-563024231" class="btn btn-outline-primary d-flex align-items-center" target="_blank">
+            <i class="fab fa-linkedin me-2"></i> LinkedIn
+          </a>
+          <!-- Email -->
+          <a href="mailto:tejasvin2004@gmail.com" class="btn btn-outline-danger d-flex align-items-center">
+            <i class="fas fa-envelope me-2"></i> Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-3 bg-dark text-center text-light">
+  <p>&copy; 2024 MyPortfolio. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AOS Animation JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
